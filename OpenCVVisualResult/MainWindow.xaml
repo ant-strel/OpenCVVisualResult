@@ -1,0 +1,25 @@
+﻿<Window x:Class="OpenCVVisualResult.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenCVVisualResult"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="109*"></ColumnDefinition>
+            <ColumnDefinition Width="155*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListView HorizontalAlignment="Left" x:Name="lstFunctions" Height="405" VerticalAlignment="Top" Width="148" Margin="4,4,0,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding FunctionName}"></Label>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>
